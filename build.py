@@ -11,7 +11,7 @@ with open('template/base.html', 'r') as fd:
 
 
 @easyargs
-def main(git_version, version):
+def main(version, git_version, commit):
     """
     Build the HTML content
     """
@@ -27,11 +27,16 @@ def main(git_version, version):
             )
         ]
     )
+
+    # Version build
+    if git_version != version:
+        # It's not a tag
+        version = '{}-{}'.format(version, commit)
+
     with open('docs/index.html', 'w') as fd:
         template = Template(TEMPLATE)
         html = template.substitute({
             'body': body,
-            'git_version': git_version,
             'version': version,
         })
         fd.write(html)

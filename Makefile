@@ -5,7 +5,7 @@ help:
 	@echo ' * clean: Remove the contents of the `docs/` directory'
 
 html:
-	GIT_VERSION=`git describe --tags` VERSION=`git describe --tags --abbrev=0` tox
+	COMMIT=`git rev-parse --short HEAD` VERSION=`git describe --tags --abbrev=0` GIT_VERSION=`git describe --tags` tox
 
 clean:
 	rm -f docs/*
