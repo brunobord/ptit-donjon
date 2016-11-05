@@ -24,7 +24,7 @@ body {
 body {
   font-family: 'Cardo', serif;
   color: #252525;
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 }
 h1, h2, h3, h4, h5, h6, th {
     font-variant: small-caps;
@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6, th {
 }
 h1 {
     font-size: xx-large;
+    text-align: center;
 }
 h2 {
     font-size: x-large;
@@ -84,14 +85,138 @@ footer {
 <body>
 <section><h1 id="p-tit-donjon">P'tit Donjon<a class="headerlink" href="#p-tit-donjon" title="Permanent link">&para;</a></h1>
 <h2 id="preambule">Préambule<a class="headerlink" href="#preambule" title="Permanent link">&para;</a></h2>
-<p><em>P'tit Donjon</em> est un jeu de rôle dans lequel les joueurs incarneront des aventuriers dans un monde médiéval-fantastique, parsemé de donjons mystérieux, dans lesquels on pourra trouver autant de monstres dangereux que de trésors fabuleux. Les personnages sont créés en quelques secondes, les règles s'expliquent d'elles-même, les combats sont rapides et mortels.</p>
+<p><em>P'tit Donjon</em> est un jeu de rôle dans lequel les joueurs incarneront des aventuriers dans un monde médiéval-fantastique, parsemé de donjons mystérieux, dans lesquels on pourra trouver autant de monstres dangereux que de trésors fabuleux. Les personnages sont créés en quelques secondes, les règles s'expliquent facilement, les combats sont rapides et mortels.</p>
 <p>Pour jouer il suffit de feuilles de papier, de crayons, d'un dé classique à 6 faces (un par joueur si possible, c'est plus sympathique d'avoir <em>son</em> dé).</p>
 <p>Les règles nécessitent de savoir compter les points sur le dé, de faire des additions ou des soustractions simples.</p>
+<h2 id="la-regle-presque-unique">La règle (presque) unique<a class="headerlink" href="#la-regle-presque-unique" title="Permanent link">&para;</a></h2>
+<p>Quand un défi se présente aux personnages, et que l'issue en est incertaine, le MJ propose au joueur de lancer le dé. De son côté, le MJ aura décidé d'un niveau de difficulté (ND) entre 1 et 6 en fonction du défi. Un ND de 1 représente une tâche très facile, alors qu'un 6 représente une tâche quasiment insurmontable.</p>
+<p>Le joueur ajoutera ou retranchera tous les bonus ou malus qui s'appliquent à la situation. Le MJ peut aider le joueur à trouver quels modificateurs sont adéquats.</p>
+<ul>
+<li>Si le résultat est <em>supérieur</em> au niveau du défi, c'est une réussite.</li>
+<li>Si le résultat est <em>inférieur ou égal</em>, c'est un échec et le MJ interprète ce résultat de manière adéquate.</li>
+</ul>
+<p>La "règle unique" s'applique <a href="#combats">de manière quasi-similaire aux combats</a>.</p>
+<h3 id="avantage-desavantage">Avantage / Désavantage<a class="headerlink" href="#avantage-desavantage" title="Permanent link">&para;</a></h3>
+<p>Dans le cas où le personnage dispose d'un avantage dû à sa situation ou son équipement, le joueur lancera deux dés et gardera le meilleur des deux.</p>
+<p>Dans le cas où le joueur est désavantagé, le MJ demandera au joueur de lancer deux dés et de garder le plus mauvais dé.</p>
+<h2 id="les-personnages">Les personnages<a class="headerlink" href="#les-personnages" title="Permanent link">&para;</a></h2>
+<p>Un personnage a un <strong>nom</strong>, et une <strong>apparence</strong>.</p>
+<p>Il est <strong>fortement</strong> recommandé de laisser une grande place sur la feuille de personnage pour que le joueur puisse le dessiner. C'est de loin la phase de création des personnages qui prend le plus de temps, mais c'est une étape amusante qui donne aux joueurs l'opportunité de faire preuve de créativité.</p>
+<p>Tous les détails ajoutés par le joueur devront être discutés avec le Maître de Jeu, pour s'assurer que le personnage ne se retrouve pas avec un sabre-laser (ou toute arme magique surpuissante) sans que le MJ aie donné son accord.</p>
+<p>Les personnages commencent au niveau 1 et disposent de 6 points de vie (PV) de base.</p>
+<p>Dans <em>P'tit Donjon</em>, il n'y a pas de classes de personnage. Au lieu de cela, chaque joueur peut choisir deux options parmi les suivantes :</p>
+<ul>
+<li><input disabled="disabled" type="checkbox" /> Rapide : à son tour de combat, peut ajouter une 3° action, mouvement ou attaque.</li>
+<li><input disabled="disabled" type="checkbox" /> Fort : Bonus de +1 pendant une attaque.</li>
+<li><input disabled="disabled" type="checkbox" /> Chanceux : Quand le MJ doit déterminer la valeur d'un trésor, rajoute 1d.</li>
+<li><input disabled="disabled" type="checkbox" /> Résistant : Rajoute +1 PV.</li>
+<li><input disabled="disabled" type="checkbox" /> Subtil : Bonus de +1 aux manoeuvres discrètes.</li>
+<li><input disabled="disabled" type="checkbox" /> Équipement - Arme de qualité : Si l'attaque est réussie, inflige +1 dégât.</li>
+<li><input disabled="disabled" type="checkbox" /> Équipement - Armure : Absorbe 1 point de dégât.</li>
+<li><input disabled="disabled" type="checkbox" /> Équipement - Bouclier : Absorbe 1 point de dégât.</li>
+<li><input disabled="disabled" type="checkbox" /> Spécialité : +1 pour désarmer les pièges.</li>
+<li><input disabled="disabled" type="checkbox" /> Sort(s) de magie (on peut prendre deux fois cette option).</li>
+</ul>
+<h2 id="la-magie">La magie<a class="headerlink" href="#la-magie" title="Permanent link">&para;</a></h2>
+<p>Voici les sorts disponibles pour les utilisateurs de magie. Lorsqu'un PJ doit lancer un sort, il ne peut pas le combiner avec une autre action (mouvement ou attaque), ce lancer l'occupe pendant tout son tour de jeu.</p>
+<h3 id="confusion">Confusion<a class="headerlink" href="#confusion" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Niveau de difficulté</strong> : ND de la cible,</li>
+<li><strong>Effet</strong> : La cible passe un tour sans faire d'action,</li>
+<li><strong>Sur un échec</strong> : Au tour suivant, le lanceur ne pourra pas lancer d'attaque et ne pourra faire qu'une seule action de mouvement.</li>
+</ul>
+<h3 id="boule-de-feu">Boule de feu<a class="headerlink" href="#boule-de-feu" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Niveau de difficulté</strong> : ND de la cible,</li>
+<li><strong>Effet</strong> : Les dégâts sont égaux à 3x la différence des dés,</li>
+<li><strong>Sur un échec</strong> : Le lanceur subit les dégâts (3x la différence de dés) + les protagonistes qui sont au contact ou proches subissent des dégâts égaux à la différence de dés,</li>
+<li><strong>Limite</strong> : Une fois par combat.</li>
+</ul>
+<h3 id="eclair">Éclair<a class="headerlink" href="#eclair" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Niveau de difficulté</strong> : ND de la cible,</li>
+<li><strong>Effet</strong> : Les dégâts sont égaux à 2x la différence des dés,</li>
+<li><strong>Sur un échec</strong> : Le lanceur subit les dégâts (2x la différence de dés),</li>
+<li><strong>Limite</strong> : Une fois par combat.</li>
+</ul>
+<h3 id="soins">Soins<a class="headerlink" href="#soins" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Niveau de difficulté</strong> : Le nombre de PV à soigner,</li>
+<li><strong>Effet</strong> : Les PV sont rendus uniquement en cas de succès,</li>
+<li><strong>Limites</strong> : Une fois par bataille, sur une cible unique.</li>
+</ul>
+<h3 id="chance">Chance<a class="headerlink" href="#chance" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Niveau de difficulté</strong> : Le jet de dé doit être de 5-6,</li>
+<li><strong>Effet</strong> : Donne un avantage à la cible,</li>
+<li><strong>Limite</strong> : Une fois par bataille, <em>avant</em> que la cible fasse son action.</li>
+</ul>
+<h3 id="bouclier-magique">Bouclier magique<a class="headerlink" href="#bouclier-magique" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Niveau de difficulté</strong> : le jet de dé doit être de 5-6,</li>
+<li><strong>Effet</strong> : Ajout 1 point d'armure à la cible, jusqu'à la fin du combat,</li>
+<li><strong>Limite</strong> : Une fois par bataille.</li>
+</ul>
+<h2 id="combat">Combat<a class="headerlink" href="#combat" title="Permanent link">&para;</a></h2>
+<h3 id="un-mot-sur-les-distances">Un mot sur les distances<a class="headerlink" href="#un-mot-sur-les-distances" title="Permanent link">&para;</a></h3>
+<p>Au lieu de les mesurer en nombres précis, on utilise 4 intervalles de distances. <strong>Au contact</strong>, <strong>Proche</strong>, <strong>Loin</strong> et <strong>Distant</strong>. À son tour chaque personnage peut se déplacer vers un point qui est <strong>Proche</strong> de lui ainsi que réaliser une action, cette action pouvant être effectuée à n'importe quel moment du déplacement. Il peut aussi ne pas effectuer d'action et se déplacer vers un point <strong>Loin</strong> à la place. Tout ce qui est au-delà de <strong>Loin</strong> est qualifiable de <strong>Distant</strong> et peut être atteint en 3 mouvements.</p>
+<p>Ce système est conçu pour contribuer au style de jeu "théâtre de l'imaginaire" et d'être moins concentré sur la comptabilisation des petites cases et du calcul des distances au centimètre près. Pour convertir les vitesses de mouvement et les mesures de distance (pour les sorts et leurs zones d'effet), utilisez le guide ci-dessous :</p>
+<table>
+<thead>
+<tr>
+<th align="center">Au contact</th>
+<th align="center">Proche</th>
+<th align="center">Loin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0 - 1.5m</td>
+<td align="center">1.5m - 20m</td>
+<td align="center">20m - 35m</td>
+</tr>
+</tbody>
+</table>
+<p>Un joueur (ou toute autre créature) ne peut pas attaquer en mêlée (épée, hache...) un adversaire s'il n'est pas <em>Au contact</em> de cet adversaire. C'est pourquoi les actions de mouvement sont très importantes au niveau tactique, y compris et surtout dans les espaces confinés des souterrains.</p>
+<p>Les attaques à distance (arcs, lancer de pierre ou de couteau, etc.) ne peuvent se faire que sur des portées <em>Proches</em> ou <em>Loin</em>. Une attaque sur une cible <em>Distante</em> se fera avec un <em>Désavantage</em>.</p>
+<h3 id="dans-le-feu-de-l-action">Dans le feu de l'action<a class="headerlink" href="#dans-le-feu-de-l-action" title="Permanent link">&para;</a></h3>
+<p>Les combats se résolvent comme suit :</p>
+<p>À son tour de jeu, chaque protagoniste peut faire une action de mouvement et une action d'attaque (sauf (in)capacité spéciale ou temporaire - comme le fait de lancer un sort, par exemple).</p>
+<p>Il n'y a que les joueurs qui lancent les dés pendant un combat. Ils ont toujours l'initiative et le MJ devra décrire les mouvements des créatures lorsque les PJ auront terminé leurs manoeuvres. Chaque lancer de dé correspond à une "passe d'armes", qui peut déboucher sur une blessure de la créature ou du PJ.</p>
+<h3 id="combat-en-melee">Combat en mêlée<a class="headerlink" href="#combat-en-melee" title="Permanent link">&para;</a></h3>
+<p>Le joueur désigne une cible accessible. Le joueur lance le dé et applique les divers bonus/malus applicables :</p>
+<ul>
+<li>Si le résultat est supérieur au ND de la créature, il inflige les dégâts égaux à la différence entre le résultat et les ND (+ d'éventuels bonus s'il y a lieu).</li>
+<li>Si le résultat est inférieur au ND de la créature, le PJ reçoit les dégâts de la même manière.</li>
+<li>Si le résultat est égal au ND, les deux créatures encaissent un point de dommage.</li>
+</ul>
+<p>Quand la créature atteint 0 PV, elle meurt. Quand le PJ atteint 0 PV, elle sombre dans l'inconscience.</p>
+<h3 id="combat-a-distance">Combat à distance<a class="headerlink" href="#combat-a-distance" title="Permanent link">&para;</a></h3>
+<p>Quand le PJ attaque à distance (arc et flèches, lancer de couteau...) il ne peut pas encaisser de dégâts.</p>
+<p>Il y a une règle spéciale dans le cas où une des créature attaque à distance le PJ. Le joueur doit lancer les dés pour savoir s'il arrive à esquiver le missile.</p>
+<ul>
+<li>Si le résultat est supérieur au ND de la créature, il arrive à esquiver le missile ou celui-ci rate vraiment sa cible.</li>
+<li>Si le résultat est inférieur ou égal, on inflige les dégâts comme pour une attaque en mêlée, sauf que seul le PJ reçoit les dégâts, pas le lanceur.</li>
+</ul>
+<h2 id="les-aventures">Les aventures<a class="headerlink" href="#les-aventures" title="Permanent link">&para;</a></h2>
+<p>À FAIRE.</p>
+<h2 id="conseil-de-maitrise">Conseil de maîtrise<a class="headerlink" href="#conseil-de-maitrise" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Ne pas passer à côté du dessin du personnage :</strong> Évidemment, ça décale d'autant le vrai début de la partie, mais c'est un moment quasi-indispensable pour que le joueur mette sa patte, s'approprie le personnage en quelque sorte.</li>
+<li><strong>Le JdR n'est pas un substitut aux devoirs de math :</strong> Les règles sont simples, mais si pour une raison ou une autre le joueur a du mal à faire les opérations mathématiques pour déterminer le résultat, il faut dédramatiser rapidement et prendre le relais.</li>
+<li><strong>Aidez-vous de miniatures :</strong> Certains joueurs peuvent faire preuve d'abstraction, mais c'est bien plus facile pour se repérer dans l'espace, comprendre les placements des PJ et expliquer pourquoi telle ou telle action n'est pas possible. Ce ne seront pas forcément des miniatures à l'échelle ou parfaitement représentatives du personnage.</li>
+</ul>
 <h2 id="licence">Licence<a class="headerlink" href="#licence" title="Permanent link">&para;</a></h2>
-<p>Ce jeu est l'oeuvre de Bruno Bord - &copy; 2016 - disponible sous contrat <a href="http://creativecommons.org/licenses/by/">Creative Commons Attribution</a>.</p></section>
+<p>Ce jeu est l'oeuvre de Bruno Bord - &copy; 2016 - disponible sous contrat <a href="http://creativecommons.org/licenses/by/">Creative Commons Attribution</a>.</p>
+<h3 id="references">Références<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="http://www.1km1kt.net/rpg/dungeon-squad">Dungeon Squad</a>,</li>
+<li><a href="http://bullypulpitgames.com/downloads/dungeon-squad-2/">Dungeon Squad 2</a>,</li>
+<li>La section "Distances et Mouvements" est tirée de <a href="http://the-black-hack.jehaisleprintemps.net/french/#mouvement-et-distance">la VF de "The Black Hack" (licence OGL)</a></li>
+</ul></section>
 
 <footer>
-    <p>This game is made by Bruno Bord - 2016, <a href="https://github.com/brunobord/ptit-donjon">Github project</a> -- <a href="https://creativecommons.org/licenses/by/">CC-BY</a> -- build: v0.0.0-8d6c587</p>
+    <p>This game is made by Bruno Bord - 2016, <a href="https://github.com/brunobord/ptit-donjon">Github project</a> -- <a href="https://creativecommons.org/licenses/by/">CC-BY</a> -- build: v0.0.0-e7686fb</p>
 </footer>
 
 <body>
