@@ -27,7 +27,7 @@ def main(git_version, version):
             )
         ]
     )
-    with open('build/index.html', 'w') as fd:
+    with open('docs/index.html', 'w') as fd:
         template = Template(TEMPLATE)
         html = template.substitute({
             'body': body,
