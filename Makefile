@@ -1,9 +1,10 @@
 help:
 	@echo 'Help on this program'
 	@echo
-	@echo ' * build: Build the HTML page in the `build/` directory'
+	@echo ' * html: Build the HTML page in the `build/` directory'
+	@echo ' * clean: Remove the contents of the `build/` directory'
 
-build:
+html:
 	GIT_VERSION=`git describe --tags` VERSION=`git describe --tags --abbrev=0` tox
 
 clean:
